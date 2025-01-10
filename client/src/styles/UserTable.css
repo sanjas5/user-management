@@ -1,0 +1,116 @@
+.userTable {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+th {
+  background-color: #263226;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.deleteButton,
+.editButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+.deleteButton:focus {
+  outline: none;
+}
+
+.editButton {
+  background-color: #3498db;
+  margin-left: 10px;
+}
+
+.editButton:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .userTable {
+    padding: 5px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  th {
+    font-size: 13px;
+  }
+
+  .deleteButton,
+  .editButton {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .userTable {
+    overflow-x: auto;
+  }
+
+  table {
+    table-layout: auto;
+  }
+
+  th,
+  td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .deleteButton,
+  .editButton {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 50%;
+  }
+}

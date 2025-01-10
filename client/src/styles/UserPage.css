@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.userPageContainerTitle {
+  text-align: center;
+  margin: 50px 0px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.userPageContainerTitle:hover {
+  transform: scale(1.05);
+  color: #84a685;
+}
