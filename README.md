@@ -13,8 +13,21 @@ This project consists of two main parts: a **backend** built with **NestJS** (No
 - **Edit User**: A form to update an existing user's details.
 - **Delete User**: Option to delete a user from the database.
 
-### UI Components
+---
+### API Documentation with Swagger
+To interact with the User Management API and explore its available endpoints, you can use the **Swagger UI**. Swagger is automatically set up for this project and provides a visual interface to test and understand the API.
+#### Accessing Swagger UI
+Once the backend is running locally, you can access the Swagger API documentation by navigating to:
+```bash
+http://localhost:8000/api
+```
+This will open the Swagger UI where you can:
+-- View all available API endpoints.
+-- See detailed information about each endpoint, including request parameters and response structures.
+--Test the API by sending real requests from within the Swagger UI.
+---
 
+### UI Components
 1. **User List**:
 
    - Displays a list of users with their names, emails, and phone numbers.
@@ -63,7 +76,7 @@ This project consists of two main parts: a **backend** built with **NestJS** (No
 - Basic UI for CRUD operations (list, add, update, delete users)
 - **ESLint** for linting
 - **Jest** for unit tests
-
+---
 ## Project Setup
 
 **Clone the repository:**
@@ -137,7 +150,7 @@ git clone https://github.com/sanjas5/user-management.git
    ```bash
    yarn lint
    ```
-
+---
 ## Additional Features
 
 - **Responsive Design**: The app is responsive and works on various screen sizes.
